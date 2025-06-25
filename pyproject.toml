@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "py_clean"
+version = "0.1.0"
+description = "Starter project structure for python using the Clean Architecture"
+authors = ["Utsav Gupta <mail@utsavgupta.in>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "py_clean", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.13"
+pydantic = "^2.11.7"
+black = "^25.1.0"
+isort = "^6.0.1"
+uvicorn = "^0.34.3"
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
